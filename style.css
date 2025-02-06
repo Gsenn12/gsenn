@@ -1,0 +1,35 @@
+/* Efek hover pada tombol Edit dan Hapus */
+.btn {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.1); /* Membesarkan tombol */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan */
+}
+
+/* Tambahan untuk tombol dengan warna khusus */
+.btn-warning:hover {
+    background-color: #e0a800; /* Warna tombol edit saat hover */
+}
+
+.btn-danger:hover {
+    background-color: #c82333; /* Warna tombol hapus saat hover */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    max-width: 400px;
+    margin: 50px auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin-bottom: 10px;
+    padding: 8px;
+}
+
